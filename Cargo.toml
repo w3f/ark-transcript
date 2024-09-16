@@ -1,0 +1,32 @@
+[package]
+name = "ark-transcript"
+description = "Arkworks friendly transcripts for proofs using Fiat-Shamir"
+authors = ["Jeff Burdges <jeff@web3.foundation>"]
+version = "0.0.2"
+repository = "https://github.com/w3f/ring-vrf/tree/master/ark_transcript"
+edition = "2021"
+license = "MIT/Apache-2.0"
+keywords = ["crypto", "cryptography", "sha3", "shake", "hash", "signature", "proof", "transcript"]
+
+
+[dependencies]
+
+rand_core = { version = "0.6", default-features = false }
+digest = { version = "0.10", default-features = false }
+sha3 = { version = "0.10", default-features = false }
+
+ark-std = { version = "0.4", default-features = false }
+ark-ff = { version = "0.4", default-features = false }
+ark-serialize = { version = "0.4", default-features = false }
+
+
+[dev-dependencies]
+ark-ed25519 = { version = "0.4", default-features = false }
+
+[features]
+default = [] # "getrandom", "std", "rand"
+std = [] # "getrandom"
+debug-transcript = ["std"]
+# getrandom = ["rand_core/getrandom"]
+
+
