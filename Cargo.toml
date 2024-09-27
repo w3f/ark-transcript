@@ -6,7 +6,7 @@ version = "0.0.2"
 repository = "https://github.com/w3f/ark-transcript"
 edition = "2021"
 license = "MIT/Apache-2.0"
-keywords = ["crypto", "cryptography", "sha3", "shake", "hash", "signature", "proof", "transcript"]
+keywords = ["cryptography", "sha3", "shake", "hash", "transcript"]
 
 
 [dependencies]
