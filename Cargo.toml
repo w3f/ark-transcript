@@ -2,7 +2,7 @@
 name = "ark-transcript"
 description = "Arkworks friendly transcripts for proofs using Fiat-Shamir"
 authors = ["Jeff Burdges <jeff@web3.foundation>"]
-version = "0.0.2"
+version = "0.0.3"
 repository = "https://github.com/w3f/ark-transcript"
 edition = "2021"
 license = "MIT/Apache-2.0"
@@ -10,7 +10,6 @@ keywords = ["cryptography", "sha3", "shake", "hash", "transcript"]
 
 
 [dependencies]
-
 rand_core = { version = "0.6", default-features = false }
 digest = { version = "0.10", default-features = false }
 sha3 = { version = "0.10", default-features = false }
